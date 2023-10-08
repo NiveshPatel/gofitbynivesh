@@ -40,8 +40,8 @@ const Exercises = ({exercises,setExercises,bodyPart}) => {
     >
    <Typography
    variant="h3"
-   
-   >Showing Results</Typography>
+   sx={{fontSize:{lg:'70px',xs:'35px'},mb:'20px'}}
+   >Showing results...</Typography>
    <Stack direction="row" sx={{gap:{lg:'110px',xs:'50px'}}}
    flexWrap="wrap"
    justifyContent="center"

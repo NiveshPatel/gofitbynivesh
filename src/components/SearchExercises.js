@@ -16,7 +16,7 @@ fetchExerciseData();
    },[])
 const handelSearch = async()=>{
   if(search){
-    const exerciseData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/name/${search}?limit=70`,exerciseOptions)
+    const exerciseData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/name/${search}?limit=50`,exerciseOptions)
 
    
     window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' });
@@ -86,7 +86,7 @@ const handelSearch = async()=>{
 
         }}
         >
-          <HorizontalScrollbar data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart}/>
+          <HorizontalScrollbar data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart} isBodyParts/>
         </Box>
     </Stack>
   )
