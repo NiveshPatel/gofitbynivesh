@@ -16,7 +16,7 @@ fetchExerciseData();
    },[])
 const handelSearch = async()=>{
   if(search){
-    const exerciseData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/name/${search}?limit=50`,exerciseOptions)
+    const exerciseData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/name/${search}?limit=30`,exerciseOptions)
 
    
     window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' });
